@@ -6,7 +6,7 @@ Selling this theme may result in consequences
 
 To install this theme you must download the assests and material folders
 
-Step 1 - he current assets folder in your Dashactyl Durectory and add the new one 
+Step 1 - he current assets folder in your Dashactyl Directory and add the new one 
 
 Step 2 - Add the material folder in your themes directory , rename it to default or change your dashactyl settings in settings.json
 
