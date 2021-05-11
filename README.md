@@ -17,6 +17,6 @@ if you wanna remove the atop development name from title and page you need to do
 if you have any issues or if there any bugs you may ask for support or request help by Joining atom development discord server (link below) 
 
 
-Atom Development Discord Server : https://discord.gg/QDngZeCyXK
+Atom Development Discord Server : https://discord.gg/r9Ee4JYvFQ
 
 Ryan Discord Id : Ryan.#9161
