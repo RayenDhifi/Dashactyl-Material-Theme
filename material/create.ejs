@@ -1,0 +1,386 @@
+<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Atom Development
+  </title>
+  <% if (settings.api.arcio.enabled == true) { %>
+    <script async src="https://arc.io/widget.min.js#<%= settings.api.arcio.widgetid %>"></script>
+<% } %>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        Atom Development
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="/dashboard">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="/create">
+              <i class="material-icons">person</i>
+              <p>Create a server</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/servers">
+              <i class="material-icons">content_paste</i>
+              <p>Server List</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/store">
+              <i class="material-icons">library_books</i>
+              <p>Store</p>
+            </a>
+            <li class="nav-item ">
+              <a class="nav-link" href="/regen">
+                <i class="material-icons">location_ons</i>
+                <p>Regenerate</p>
+              </a>
+            </li>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">
+                <i class="ni ni-key-25 text-info"></i>
+                <span class="nav-link-text">Admin</span>
+                <i class="material-icons">bubble_chart</i>
+              </a>
+            </li>
+          
+      </div>
+    </div>
+    <div class="main-panel">
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <ul class="navbar-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button onclick="submitForm()" class="btn btn-primary pull-right"><% if (typeof coins == "number") { %>                        
+            You  have <%= coins %> coin<%= coins == 1 ? "" : "s" %>.</button>                                           
+    <% } %></span>
+            </p>
+          </a>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              
+              <div class="dropdown-menu dropdown-menu-xl  dropdown-menu-right  py-0 overflow-hidden">
+                <!-- Dropdown header -->
+               
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-1.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-2.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>3 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-3.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>5 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Your posts have been liked a lot.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-4.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>2 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="assets/img/theme/team-5.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm">John Snow</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>3 hrs ago</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+         
+        </div>
+      </div>
+    <!-- Header -->
+
+  
+
+    <!-- values -->
+    
+</nav>
+<!-- End Navbar -->
+    <!-- values -->
+    <%
+    let ram = 0;
+    let disk = 0;
+    let cpu = 0;
+    let servers = pterodactyl.relationships.servers.data.length;
+    for (let i = 0, len = pterodactyl.relationships.servers.data.length; i < len; i++) {
+        ram = ram + (typeof pterodactyl.relationships.servers.data[i].attributes.limits.memory == "number" ? pterodactyl.relationships.servers.data[i].attributes.limits.memory : 0);
+        disk = disk + (typeof pterodactyl.relationships.servers.data[i].attributes.limits.disk == "number" ? pterodactyl.relationships.servers.data[i].attributes.limits.disk : 0);
+        cpu = cpu + (typeof pterodactyl.relationships.servers.data[i].attributes.limits.cpu == "number" ? pterodactyl.relationships.servers.data[i].attributes.limits.cpu : 0);
+    }
+%>
+
+     
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">content_copy</i>
+            </div>
+            <p class="card-category">Storage</p>
+            <h3 class="card-title"<code><%= disk %>MB</code> /<%= (packages ? packages.disk : 0) + extraresources.disk %>MB</code>
+            </h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons text-danger">warning</i>
+              <a href="javascript:;">Check our Discord to get more resources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">store</i>
+            </div>
+            <p class="card-category">Ram</p>
+            <h3 class="card-title"><%= ram %>MB / <%= (packages ? packages.ram : 0) + extraresources.ram %>MB</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-danger card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">info_outline</i>
+            </div>
+            <p class="card-category">CPU</p>
+            <h3 class="card-title"><%= cpu %>% / <%= (packages ? packages.cpu : 0) + extraresources.cpu %>%</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">local_offer</i> Tracked from Github
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+            <p class="card-category">Servers</p>
+            <h3 class="card-title"><%= servers %> server<%= servers == 1 ? "" : "s" %> / <%= (packages ? packages.servers : 0) + extraresources.servers %> server<%= (packages ? packages.servers : 0) + extraresources.servers == 1 ? "" : "s" %></h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="row">
+
+      <!-- Area Chart -->
+      <div class="col-lg-12 grid-margin stretch-card">
+          <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div
+                  class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Servers</h6>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                  <h3>Create a Server</h3>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <br>
+                  <label for="location">Location:</label>
+                  <select class="form-control" id="location">
+                    <% for (let [name, value] of Object.entries(settings.api.client.locations)) { %>
+                      <option value="<%= name %>"><%= value.name %></option>
+                    <% } %>
+                  </select>
+                  <br>
+                  <label for="location">Egg:</label>
+                  <select class="form-control" id="egg">
+                    <% for (let [name, value] of Object.entries(settings.api.client.eggs)) { %>
+                      <option value="<%= name %>"><%= value.display %></option>
+                    <% } %>
+                  </select>
+                  <br>
+                  <label for="ram">RAM:</label>
+                  <input type="text" class="form-control" id="ram" placeholder="RAM">
+                  <br>
+                  <label for="disk">DISK:</label>
+                  <input type="text" class="form-control" id="disk" placeholder="DISK">
+                  <br>
+                  <label for="cpu">CPU:</label>
+                  <input type="text" class="form-control" id="cpu" placeholder="CPU">
+                  <br>
+                  <button onclick="submitForm()" class="btn btn-fill btn-primary">Create</button>
+              <br></div>
+              <script>
+                  async function submitForm() {
+                      let name = encodeURIComponent(document.getElementById("name").value);
+                      let egg = encodeURIComponent(document.getElementById("egg").value);
+                      let ram = encodeURIComponent(document.getElementById("ram").value);
+                      let disk = encodeURIComponent(document.getElementById("disk").value);
+                      let cpu = encodeURIComponent(document.getElementById("cpu").value);
+                      let location = encodeURIComponent(document.getElementById("location").value);
+                      document.location.href = `/create?name=${name}&egg=${egg}&ram=${ram}&disk=${disk}&cpu=${cpu}&location=${location}`;
+                  };
+              </script>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- Argon JS -->
+  <script src="assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>
