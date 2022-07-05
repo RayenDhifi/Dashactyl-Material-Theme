@@ -12,8 +12,6 @@ Step 2 - Add the material folder in your themes directory , rename it to default
 
 step 3- start your server and everything should be ready, 
 
-if you wanna remove the atom development name from title and page you need to do it manually in every page
-
 if you have any issues or if there any bugs you may ask for support or request help by Joining atom development discord server (link below) 
 
 
