@@ -1,6 +1,6 @@
 # Dashactyl-Material-Theme
 
-This Theme is made by Ryan From Atom Development
+This Theme is made by Rayen
 
 Selling this theme may result in consequences
 
@@ -16,7 +16,5 @@ if you wanna remove the atom development name from title and page you need to do
 
 if you have any issues or if there any bugs you may ask for support or request help by Joining atom development discord server (link below) 
 
-
-Atom Development Discord Server : https://discord.gg/r9Ee4JYvFQ
 
 Ryan Discord Id : Ryan.#9161
