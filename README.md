@@ -17,4 +17,4 @@ if you wanna remove the atom development name from title and page you need to do
 if you have any issues or if there any bugs you may ask for support or request help by Joining atom development discord server (link below) 
 
 
-Ryan Discord Id : Ryan.#9161
+Rayen Discord Id : Rayen#7261
